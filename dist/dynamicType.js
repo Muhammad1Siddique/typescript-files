@@ -1,0 +1,18 @@
+"use strict";
+var babyage = 3;
+babyage = 'ramzan';
+babyage = true;
+console.log(babyage);
+babyage = { name: 'zeeshan', age: 1 };
+console.log(babyage);
+var fullmixed = [];
+fullmixed.push('siddique');
+fullmixed.push(29);
+fullmixed.push(false);
+fullmixed.push({ name: 'siddique', age: 29, emp: false });
+console.log(fullmixed);
+var ninja;
+ninja = { name: 'siddique', age: 29 };
+console.log(ninja);
+ninja = { name: 29, age: 'siddique' };
+console.log(ninja);
