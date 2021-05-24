@@ -17,7 +17,10 @@ var invTwo = new Invoice('Javeria', 'digital Marketing', 500);
 var Invoices = [];
 Invoices.push(invOne);
 Invoices.push(invTwo);
-console.log(Invoices);
+//console.log(Invoices);
+Invoices.forEach(function (inv) {
+    console.log(inv.client, inv.details, inv.amount, inv.format());
+});
 var form = document.querySelector('.new-item-form');
 var type = document.querySelector('#type');
 var tofrom = document.querySelector('#tofrom');

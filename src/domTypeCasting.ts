@@ -23,7 +23,11 @@ let Invoices: Invoice[] = [];
 Invoices.push(invOne);
 Invoices.push(invTwo);
 
-console.log(Invoices);
+//console.log(Invoices);
+
+Invoices.forEach(inv =>{
+    console.log(inv.client, inv.details, inv.amount, inv.format());
+})
 
 const form = document.querySelector('.new-item-form') as HTMLFormElement;
 
