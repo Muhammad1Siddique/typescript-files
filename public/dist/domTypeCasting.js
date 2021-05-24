@@ -1,8 +1,23 @@
 "use strict";
-// const anchor = document.querySelector("a");
-// if(anchor){
-//     console.log(anchor.href);
-// }
+//classes
+var Invoice = /** @class */ (function () {
+    function Invoice(c, d, a) {
+        this.client = c;
+        this.details = d;
+        this.amount = a;
+    }
+    Invoice.prototype.format = function () {
+        return this.client + " owes " + this.amount + " for " + this.details;
+    };
+    return Invoice;
+}());
+var invOne = new Invoice('Zeeshan', 'onlinestore', 300);
+var invTwo = new Invoice('Javeria', 'digital Marketing', 500);
+//console.log(invOne, invTwo);
+var Invoices = [];
+Invoices.push(invOne);
+Invoices.push(invTwo);
+console.log(Invoices);
 var form = document.querySelector('.new-item-form');
 var type = document.querySelector('#type');
 var tofrom = document.querySelector('#tofrom');
